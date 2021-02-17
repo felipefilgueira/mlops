@@ -12,9 +12,6 @@ modelo = pickle.load(open(DIR_MODELO,'rb'))
 
 app = Flask(__name__)
 
-print('user', os.environ.get('BASIC_AUTH_USERNAME'))
-print('senha', os.environ.get('BASIC_AUTH_PASSWORD'))
-
 app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
 app.config['BASIC_AUTH_PASSWORD'] = os.environ.get('BASIC_AUTH_PASSWORD')
 
