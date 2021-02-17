@@ -8,7 +8,9 @@ DIR_APP = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 DIR_MODELO = os.path.join(DIR_APP, "models", "modelo.sav")
 
 colunas = ['tamanho','ano','garagem']
-modelo = pickle.load(open(DIR_MODELO,'rb'))
+#modelo = pickle.load(open(DIR_MODELO,'rb'))
+modelo = pickle.load(open('../../models/modelo.sav','rb'))
+ 
 
 app = Flask(__name__)
 
